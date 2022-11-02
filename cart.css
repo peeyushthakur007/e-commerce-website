@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;;
+}
+body{
+    background-color: azure;
+}
+li{
+    list-style:  none;
+}
+.nav-bar{
+    height: 30px;
+    /* width: 100%; */
+    position: sticky;
+    background-color: black;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+}
+#first{
+    font-size:200% ;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 30%;
+    /* margin-right: 5%; */
+}
+#middle{
+    width: 40%;
+}
+#middle ul{
+    font-size:20px ;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 40%; */
+    align-items: center;
+}
+/* #middle li{
+    margin: 10%;
+    padding: 10%;
+} */
+#last{
+    width: 30%;
+}
+#last ul{
+    font-size:20px ;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 30%; */
+    /* float: right; */
+}
+/* #last li{
+    margin: 10%;
+    padding: 10%;
+} */
+
+
+
+#logo-name {
+    width: 30%;
+    display: flex;
+    justify-content: flex-start; }
+  
+  #menu-bar {
+    width: 40%;
+    display: flex;
+    justify-content: space-between; }
+  
+  #menu-bar ul {
+    display: flex;
+    align-items: stretch;
+    /* Default */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  
+  #personal-id {
+    width: 20%;
+    display: flex;
+    padding-left: 10%;
+    justify-content: space-between;
+    flex-direction: row; }
+  
+  #personal-id ul {
+    display: flex;
+    align-items: stretch;
+    /* Default */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0% 0 0 10%;
+    padding: 0; }
+
+
+
+    * {box-sizing:border-box}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+
+.cart-template{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 100%;
+    width: 80%; 
+    padding: 2%;
+    margin: 4% 7%;
+}
+#cart-image{
+    width: 50%;
+    border: 2px solid red;
+}
+#cart-details{
+    width: 35%;
+}

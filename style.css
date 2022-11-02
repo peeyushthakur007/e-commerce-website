@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;;
+}
+body{
+    background-color: azure;
+}
+li{
+    list-style:  none;
+}
+a{
+    text-decoration: none;
+}
+.nav-bar{
+    height: 30px;
+    /* width: 100%; */
+    position: sticky;
+    background-color: black;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+}
+#first{
+    font-size:200% ;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 30%;
+    /* margin-right: 5%; */
+}
+#middle{
+    width: 40%;
+}
+#middle ul{
+    font-size:20px ;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 40%; */
+    align-items: center;
+}
+/* #middle li{
+    margin: 10%;
+    padding: 10%;
+} */
+#last{
+    width: 30%;
+}
+#last ul{
+    font-size:20px ;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 30%; */
+    /* float: right; */
+}
+/* #last li{
+    margin: 10%;
+    padding: 10%;
+} */
+
+
+
+#logo-name {
+    width: 30%;
+    display: flex;
+    justify-content: flex-start; }
+  
+  #menu-bar {
+    width: 40%;
+    display: flex;
+    justify-content: space-between; }
+  
+  #menu-bar ul {
+    display: flex;
+    align-items: stretch;
+    /* Default */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  
+  #personal-id {
+    width: 20%;
+    display: flex;
+    padding-left: 10%;
+    justify-content: space-between;
+    flex-direction: row; }
+  
+  #personal-id ul {
+    display: flex;
+    align-items: stretch;
+    /* Default */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0% 0 0 10%;
+    padding: 0; }
+
+
+
+#card_section{
+    
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 100%;
+    width: 80%; 
+    /* border: 2px solid red; */
+    padding: 2%;
+    margin: 4% 7%;
+}
+#card1{
+    width: 33%;
+    /* border: 2px solid red; */
+}
+#card2{
+    width: 33%;
+    /* grid-row: 1/2;
+    grid-column: 2/3; */
+    /* border: 2px solid red; */
+}
+#card3{
+    width: 33%;
+    /* grid-row: 1/2;
+    grid-column: 3/4; */
+    /* border: 2px solid red; */
+}
+#card4{
+    width: 33%;
+    /* grid-row: 2/3;
+    grid-column: 1/2; */
+    /* border: 2px solid red; */
+}
+#card5{
+    width: 33%;
+    /* grid-row: 2/3;
+    grid-column: 2/3; */
+    /* border: 2px solid red; */
+}
+#card6{
+    width: 33%;
+    /* grid-row: 2/3;
+    grid-column: 3/4; */
+    /* border: 2px solid red; */
+}
+#template{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transition-delay: 0.1s;
+    border-radius: 5%;
+    background-color: white;
+    margin:  2% ;
+}
+#template:hover {
+    transform: scale(1.00); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+  }
+#template image{
+    height: 70%;
+    background-image: url('./S22Ultra_ColorSelection_Burgundy_MO.jpg');
+    width: 10px;
+}
+#button {
+    text-align: center;
+}
+#button button{
+    border-radius: 10%;
+    background-color: black;
+    color: white;
+    height: 20%;
+    width: 50%;
+    margin: 0 72%;
+    padding: 5% 0%;
+    text-align: center;
+}
+
+/* <button type="button" style="width: 50%; margin: 1.5%;">Buy Now!</button> */
+
+.img-margin{
+    height: 60%; width:60%; padding: 10% 10% 10% 20%;; text-align: center;
+}
+
+
+/* name of phone */
+#name{
+    height: 10%; text-align: center;margin: 2.5% auto; display: block;
+}
+
+#price{
+    height: 10%;text-align: center; margin: 1.5%;
+}
+
+#button{
+    width: 50%;margin: 1.5%;
+}
+.card_section{
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#str{
+    display: flex;
+    /* height: 100px; */
+}
+
+
+
+
+
+
+
+#empty_card{
+    height: 50%;
+    width: 50%;
+    background-color: white;
+}
+
+.cartAmount{
+    position: absolute;
+    top: 20%;
+    /* right:0%; */
+    left: 95%;
+    /* right: 0.000001%; */
+    height: 10%;
+    
+    font-size: 70%;
+    /* background-color: red; */
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+    padding: 0.1%;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    font-size: 100%;
+    text-align: center;
+}

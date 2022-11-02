@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Login.css">
+    <title>Login</title>
+</head>
+<body>
+    <form>
+        <div class="imgcontainer">
+          <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" id="login_naam" >
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" id="login_psw" placeholder="Enter Password" name="name"  required>
+      
+          <button type="submit" style="width: 30%;" id="login"><a href="./index.html"> Login </a>  </button>
+          <button type="submit" style="width: 30%;" id="register" ><a href="./index.html"> Register </a></button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+      <script src="./Login.js"></script>
+</body>
+</html>
