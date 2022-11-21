@@ -180,8 +180,11 @@ function add_to_cart(evt){
 
         var forced_login=alert("Login first");
         // window.location.replace("./Login.html");
-        window.location.href = "./Login.html"
-        alert("Login first");
+        window.location.href = "./Login.html";
+        window.location.href = "www.google.co.in";
+        window.location = "./Login.html";
+        
+        
     }
     else
     {
@@ -350,9 +353,16 @@ function add_to_cart(evt){
 let no_of_objects_in_cart=document.querySelector(".cartAmount");;
 if(localStorage.current_user_name!=undefined && localStorage.current_user_name!="")
 {
+    let userrr_cart=JSON.parse(localStorage.getItem(localStorage.current_user_name));
+    let count=0;
+    for(let i=0;i<userrr_cart.length;i++)
+    {
+        count+=userrr_cart[i].product_no;
+    }
+
     let userr_cart=JSON.parse(localStorage.getItem(localStorage.current_user_name)).length;
 
-no_of_objects_in_cart.innerHTML=userr_cart;
+no_of_objects_in_cart.innerHTML=count;
 }
 
 

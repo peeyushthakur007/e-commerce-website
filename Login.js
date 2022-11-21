@@ -1,4 +1,5 @@
 //-----------------All About User Logins and their database --------------------
+
 var Users_database=new Array();;
 var Users_database_in_use=new Array();
 // var login_name=document.getElementById("login_naam").value;
@@ -99,7 +100,9 @@ function login() {
     if(localStorage.current_user_name=="")
     {alert("current_user not logged in");
     alert("You are not registered, Register first");
-    window.location.href = "./Login.html";
+    location.reload();
+    // window.location.replace("./Login.html");
+    // window.location.href = "./Login.html";
 
 }
 }
@@ -170,6 +173,8 @@ function register() {
             localStorage.setItem("users_database",json_user);
             alert("the json object created is pushed into localStorage using setitem");
             localStorage.setItem("current_user_name",JSON.stringify(login_name));
+            alert("the json object is now made current_user_name");
+            alert(login_name);
         }
         else
         {
@@ -177,6 +182,8 @@ function register() {
             localStorage.setItem('users_database',JSON.stringify(localStorage_users));
             alert("again pushed into local storage using setitem hoping it would remove the previous ones");
             localStorage.setItem("current_user_name",JSON.stringify(login_name));
+            alert("the json object is now made current_user_name");
+            alert(login_name);
             // localStorage.users_database+=json_user;
         }
         
